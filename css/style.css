@@ -1,0 +1,817 @@
+/* =========================================================
+   MURAMBA PTY (LTD)
+   Part 2 - CSS Styling and Responsive Design
+   ========================================================= */
+
+
+/* =========================================================
+   1. CSS VARIABLES
+   ========================================================= */
+
+:root {
+    --primary: #0b1f33;
+    --secondary: #123b5d;
+    --accent: #f28c28;
+    --accent-dark: #d96f0b;
+
+    --white: #ffffff;
+    --light: #f5f7fa;
+    --lighter: #f9fafb;
+
+    --text: #17212b;
+    --muted: #5b6573;
+    --border: #d9e0e7;
+
+    --success: #2e7d32;
+
+    --container: 1180px;
+
+    --radius-small: 6px;
+    --radius-medium: 12px;
+    --radius-large: 18px;
+
+    --shadow-small: 0 2px 8px rgba(11, 31, 51, 0.08);
+    --shadow-medium: 0 8px 24px rgba(11, 31, 51, 0.12);
+
+    --transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   2. CSS RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   3. BASE STYLES
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+    line-height: 1.7;
+    min-width: 320px;
+}
+
+
+/* =========================================================
+   4. TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--primary);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+}
+
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+strong {
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   5. LINKS
+   ========================================================= */
+
+a {
+    color: var(--secondary);
+    text-decoration: none;
+    transition:
+        color var(--transition),
+        background-color var(--transition),
+        transform var(--transition);
+}
+
+
+a:hover {
+    color: var(--accent);
+}
+
+
+a:focus {
+    outline: 3px solid rgba(242, 140, 40, 0.35);
+    outline-offset: 3px;
+}
+
+
+a:active {
+    color: var(--accent-dark);
+}
+
+
+/* =========================================================
+   6. IMAGES
+   ========================================================= */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================================================
+   7. HEADER
+   ========================================================= */
+
+header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-small);
+    position: relative;
+    z-index: 100;
+}
+
+
+header > div {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+header > div > a {
+    flex-shrink: 0;
+}
+
+
+header img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+
+header h1 {
+    margin-bottom: 0.25rem;
+}
+
+
+header p {
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   8. MAIN NAVIGATION
+   ========================================================= */
+
+header > nav {
+    background-color: var(--primary);
+}
+
+
+header > nav ul {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+
+header > nav li {
+    display: flex;
+}
+
+
+header > nav a {
+    color: var(--white);
+    display: block;
+    padding: 1rem 1.15rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+
+header > nav a:hover {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+
+header > nav a:focus {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+
+header > nav a:active {
+    background-color: var(--accent-dark);
+    color: var(--white);
+}
+
+
+header > nav a[aria-current="page"] {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+
+/* =========================================================
+   9. MAIN CONTENT
+   ========================================================= */
+
+main {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+
+/* =========================================================
+   10. CONTENT SECTIONS
+   ========================================================= */
+
+main > section {
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-small);
+}
+
+
+main > section:first-child {
+    padding: 0;
+    overflow: hidden;
+}
+
+
+main > section:first-child img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+}
+
+
+main > section:first-child h2,
+main > section:first-child p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+main > section:first-child h2 {
+    margin-top: 2rem;
+}
+
+
+/* =========================================================
+   11. SECTION HEADINGS
+   ========================================================= */
+
+main section h2 {
+    position: relative;
+    padding-bottom: 0.7rem;
+}
+
+
+main section h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    margin-top: 0.6rem;
+
+    background-color: var(--accent);
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   12. LISTS
+   ========================================================= */
+
+main ul,
+main ol {
+    padding-left: 1.5rem;
+}
+
+
+main li {
+    margin-bottom: 0.6rem;
+}
+
+
+main li::marker {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   13. ABOUT PAGE IMAGE
+   ========================================================= */
+
+main section img {
+    border-radius: var(--radius-medium);
+}
+
+
+/* =========================================================
+   14. GALLERY
+   ========================================================= */
+
+main section[aria-labelledby*="gallery-heading"] {
+    text-align: center;
+}
+
+
+main section[aria-labelledby*="gallery-heading"] h2::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+main section[aria-labelledby*="gallery-heading"] {
+    background: linear-gradient(
+        135deg,
+        var(--white),
+        var(--lighter)
+    );
+}
+
+
+main section[aria-labelledby*="gallery-heading"] p {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   15. GALLERY IMAGE SECTIONS
+   ========================================================= */
+
+main section[aria-labelledby*="gallery-"] {
+    overflow: hidden;
+}
+
+
+main section[aria-labelledby*="gallery-"] img {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-small);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+
+main section[aria-labelledby*="gallery-"] img:hover {
+    transform: scale(1.015);
+    box-shadow: var(--shadow-medium);
+}
+
+
+main section[aria-labelledby*="gallery-"] p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   16. CALL-TO-ACTION SECTIONS
+   ========================================================= */
+
+main > section:last-child {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    border: none;
+}
+
+
+main > section:last-child h2 {
+    color: var(--white);
+}
+
+
+main > section:last-child h2::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+main > section:last-child p {
+    color: #e8edf2;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   17. BUTTON / CALL-TO-ACTION LINKS
+   ========================================================= */
+
+main > section:last-child a {
+    display: inline-block;
+
+    background-color: var(--accent);
+    color: var(--white);
+
+    padding: 0.85rem 1.6rem;
+    border-radius: var(--radius-small);
+
+    font-weight: 700;
+
+    box-shadow: var(--shadow-small);
+
+    transition:
+        background-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+
+main > section:last-child a:hover {
+    background-color: var(--accent-dark);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+
+main > section:last-child a:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.55);
+    outline-offset: 4px;
+}
+
+
+main > section:last-child a:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   18. FOOTER
+   ========================================================= */
+
+footer {
+    background-color: var(--primary);
+    color: #dce5ed;
+    padding: 3rem 1.5rem 1.5rem;
+    text-align: center;
+}
+
+
+footer h2 {
+    color: var(--white);
+    margin-bottom: 0.75rem;
+}
+
+
+footer p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer nav {
+    margin: 1.5rem 0;
+}
+
+
+footer ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+footer a {
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.4rem 0.6rem;
+}
+
+
+footer a:hover {
+    color: var(--accent);
+}
+
+
+footer a:focus {
+    outline-color: var(--accent);
+}
+
+
+footer > p:last-child {
+    font-size: 0.85rem;
+    color: #aebbc7;
+    margin-top: 1rem;
+}
+
+
+/* =========================================================
+   19. TABLET RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    :root {
+        --container: 94%;
+    }
+
+
+    header > div {
+        padding: 1rem;
+    }
+
+
+    header img {
+        width: 75px;
+        height: 75px;
+    }
+
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+
+    header > nav ul {
+        justify-content: center;
+        padding: 0.25rem 1rem;
+    }
+
+
+    header > nav a {
+        padding: 0.8rem 0.85rem;
+        font-size: 0.9rem;
+    }
+
+
+    main {
+        padding: 2.5rem 1rem;
+    }
+
+
+    main > section {
+        padding: 1.5rem;
+    }
+
+
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+
+/* =========================================================
+   20. MOBILE RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+
+    header > div {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.25rem 1rem;
+    }
+
+
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    header h1 {
+        font-size: 1.55rem;
+    }
+
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+
+    header > nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+
+    header > nav li {
+        width: 100%;
+    }
+
+
+    header > nav a {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+
+    main {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+
+    main > section {
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+
+    main > section:first-child h2,
+    main > section:first-child p {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+
+    main > section:first-child h2 {
+        margin-top: 1.5rem;
+    }
+
+
+    main > section:first-child img {
+        max-height: 320px;
+    }
+
+
+    h2 {
+        font-size: 1.55rem;
+    }
+
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+
+    main section[aria-labelledby*="gallery-"] img {
+        aspect-ratio: 4 / 3;
+    }
+
+
+    footer {
+        padding: 2rem 1rem 1rem;
+    }
+
+
+    footer ul {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+
+    footer li {
+        width: 100%;
+    }
+
+
+    footer a {
+        display: block;
+        padding: 0.5rem;
+    }
+}
+
+
+/* =========================================================
+   21. SMALL MOBILE DEVICES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.35rem;
+    }
+
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+
+    main {
+        padding: 1.25rem 0.75rem;
+    }
+
+
+    main > section {
+        padding: 1rem;
+        border-radius: var(--radius-small);
+    }
+
+
+    main > section:first-child h2,
+    main > section:first-child p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    main > section:last-child a {
+        width: 100%;
+        max-width: 280px;
+    }
+
+
+    main ul,
+    main ol {
+        padding-left: 1.25rem;
+    }
+}
+
+
+/* =========================================================
+   22. ACCESSIBILITY / REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
