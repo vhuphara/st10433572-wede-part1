@@ -6,11 +6,6 @@ Muramba PTY (LTD) is a transport and logistics company website developed to prov
 
 The website was developed as part of the website development assignment and was improved in Part 2 through CSS styling, visual design enhancements and responsive web design.
 
-## Website
-
-Live Website:
-
-https://muramba.netlify.app/
 
 ## Technologies Used
 
