@@ -19,7 +19,7 @@ https://muramba.netlify.app/
 - JavaScript
 - Responsive Web Design
 - Google Fonts
-- Netlify
+
 
 ## Website Pages
 
