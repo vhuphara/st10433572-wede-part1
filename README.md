@@ -188,3 +188,15 @@ Muramba/
     ├── IMG-20251118-WA0016-800.jpg
     ├── IMG-20251118-WA0017-400.jpg
     └── IMG-20251118-WA0017-800.jpg
+References
+
+References used during development should be documented according to the required academic referencing style.
+
+Mozilla Developer Network (MDN). CSS Documentation.
+https://developer.mozilla.org/en-US/docs/Web/CSS
+Mozilla Developer Network (MDN). Responsive Design.
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
+Mozilla Developer Network (MDN). HTML Documentation.
+https://developer.mozilla.org/en-US/docs/Web/HTML
+Google Fonts. Google Fonts.
+https://fonts.google.com/
