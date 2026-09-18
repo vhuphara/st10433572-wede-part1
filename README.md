@@ -1,177 +1,190 @@
-# Muramba PTY (LTD) Website Project
+# Muramba PTY (LTD) Website
 
-## WEDE5020 - Web Development (Introduction)
+## Project Overview
 
-### Part 1: Building the Foundation - Project Initiation and Planning
+Muramba PTY (LTD) is a transport and logistics company website developed to provide customers with information about the company's services and allow potential customers to submit enquiries.
 
-This repository contains the Part 1 project documentation and initial
-planning for the proposed website for Muramba PTY (LTD).
+The website was developed as part of the website development assignment and was improved in Part 2 through CSS styling, visual design enhancements and responsive web design.
 
----
+## Website
 
-## 1. Organisation
+Live Website:
 
-### Muramba PTY (LTD)
+https://muramba.netlify.app/
 
-Muramba PTY (LTD) is a transport and logistics organisation providing
-transportation solutions for individuals, households and businesses.
+## Technologies Used
 
-The proposed website will provide customers with information about the
-organisation, its transport services and ways to make enquiries.
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Web Design
+- Google Fonts
+- Netlify
 
----
+## Website Pages
 
-## 2. Project Proposal
+The website contains the following pages:
 
-The purpose of the proposed website is to create a professional online
-presence for Muramba PTY (LTD).
+- Home
+- About
+- Services
+- Gallery
+- Request a Quote
+- Contact
 
-The website will provide customers with easy access to information about
-the organisation and its services.
+## Part 2 Improvements
 
-The proposed website will include:
+The website was enhanced in Part 2 with the following improvements:
 
-- Home page
-- About Us page
-- Services page
-- Gallery page
-- Request a Quote / Enquiry page
-- Contact page
+### CSS Styling
 
-The website will also include an enquiry form, contact form, business
-location information and other features that improve communication between
-the organisation and its customers.
+- Added a central external CSS stylesheet.
+- Added a CSS reset for consistent browser rendering.
+- Improved typography and text hierarchy.
+- Added consistent spacing and layout rules.
+- Added colour styling and visual hierarchy.
+- Added borders, border-radius and box shadows.
+- Improved buttons and interactive states.
+- Added hover and focus effects.
+- Added active navigation states.
+- Improved the header and footer design.
+- Improved cards, service sections and content areas.
 
----
+### Responsive Design
 
-## 3. Website Goals and Objectives
+The website was designed to work across different screen sizes.
 
-The main goal of the website is to provide Muramba PTY (LTD) with a
-professional online presence that makes its transport and logistics
-services easier for customers to find and understand.
+Responsive layouts were created for:
 
-The objectives are to:
+- Desktop screens
+- Tablet screens
+- Mobile devices
+- Small mobile devices
 
-- Provide clear information about Muramba PTY (LTD).
-- Promote the organisation's transport and logistics services.
-- Make it easier for customers to request quotations.
-- Improve communication with customers.
-- Provide customers with general contact information.
-- Showcase the organisation's services and activities.
-- Improve the professional image of the organisation.
-- Create an accessible and user-friendly website structure.
+Responsive CSS media queries were used to adjust:
 
----
+- Navigation
+- Typography
+- Images
+- Content sections
+- Service layouts
+- Gallery layouts
+- Forms
+- Buttons
+- Footer layout
+- Map dimensions
 
-## 4. Target Audience
+### Responsive Images
 
-The proposed website is aimed at:
+Responsive image techniques were implemented using:
 
-- Individuals requiring transport services.
-- Households requiring removal services.
-- Customers requiring furniture delivery.
-- Customers requiring long-distance moving services.
-- Small businesses requiring transport services.
-- Businesses requiring commercial logistics services.
+- `srcset`
+- `sizes`
+- Lazy loading
+- Image decoding optimisation
 
-The website will provide information in a clear and simple manner so that
-visitors can quickly find the services and contact information they need.
+This allows suitable image sizes to be selected depending on the device and screen size.
 
----
+### Accessibility Improvements
 
-## 5. Proposed Website Features
+The website includes accessibility improvements such as:
 
-The proposed website will contain a minimum of six pages.
+- Skip-to-content links
+- Visible keyboard focus states
+- Semantic HTML structure
+- Descriptive image alternative text
+- Appropriate navigation states
+- Responsive layouts for different devices
 
-### Home Page
+## Responsive Breakpoints
 
-The Home page will provide:
+The CSS uses responsive breakpoints to support different screen sizes.
 
-- Company introduction.
-- Hero section.
-- Main services.
-- Call-to-action.
-- Reasons to choose Muramba.
-- Customer testimonials.
-- Contact and WhatsApp links.
+| Screen Type | Approximate Width |
+|---|---:|
+| Desktop | 901px and above |
+| Tablet | Up to 900px |
+| Mobile | Up to 600px |
+| Small Mobile | Up to 400px |
 
-### About Us Page
+## Testing
 
-The About Us page will provide:
+The website was designed to be tested at different viewport sizes.
 
-- Company background.
-- Mission.
-- Vision.
-- Core values.
-- Business information.
+| Device Type | Resolution | Result |
+|---|---:|---|
+| Desktop | 1440 × 900 | To be confirmed |
+| Tablet | 768 × 1024 | To be confirmed |
+| Mobile | 390 × 844 | To be confirmed |
+| Small Mobile | 375 × 667 | To be confirmed |
 
-### Services Page
+### Testing Checklist
 
-The Services page will provide information about:
+The following areas were checked during responsive testing:
 
-- Household removals.
-- Office relocations.
-- Furniture delivery.
-- Nationwide transport.
-- Commercial logistics.
-- Long-distance moving.
+- [ ] Navigation
+- [ ] Header
+- [ ] Hero sections
+- [ ] Images
+- [ ] Text readability
+- [ ] Buttons
+- [ ] Service sections
+- [ ] Gallery
+- [ ] Enquiry form
+- [ ] Contact form
+- [ ] Map
+- [ ] Footer
+- [ ] Horizontal scrolling
+- [ ] Mobile layout
+- [ ] Tablet layout
+- [ ] Desktop layout
 
-### Gallery Page
+## Part 2 Evidence
 
-The Gallery page will showcase photographs related to the organisation's
-transport and logistics activities.
+Screenshots should be included as evidence of responsive testing.
 
-### Request a Quote / Enquiry Page
+Recommended evidence includes:
 
-The enquiry page will allow customers to submit service and quotation
-requirements.
+1. Desktop homepage
+2. Tablet homepage
+3. Mobile homepage
+4. Desktop Services page
+5. Mobile Services page
+6. Desktop Gallery page
+7. Mobile Gallery page
+8. Request a Quote page
+9. Contact page
 
-The enquiry form will include:
-
-- Full name.
-- Telephone number.
-- Email address.
-- Service required.
-- Collection location.
-- Destination.
-- Preferred date.
-- Additional requirements.
-
-### Contact Page
-
-The Contact page will provide:
-
-- Telephone number.
-- Email address.
-- WhatsApp contact.
-- Business location information.
-- Map.
-- General contact form.
-
-The enquiry form and contact form will have different purposes. The
-enquiry form will be used for transport and quotation requirements,
-while the contact form will be used for general communication.
-
----
-
-## 6. Website Structure and Sitemap
-
-The proposed website structure is:
+## Project Structure
 
 ```text
-                         HOME
-                      index.html
-                          |
-        ┌─────────────────┼──────────────────┐
-        |                 |                  |
-        ▼                 ▼                  ▼
-    ABOUT US          SERVICES           GALLERY
-   about.html       services.html       gallery.html
-                          |
-                          ▼
-                  REQUEST A QUOTE
-                   enquiry.html
-                          |
-                          ▼
-                       CONTACT
-                    contact.html
+Muramba/
+│
+├── index.html
+├── about.html
+├── services.html
+├── gallery.html
+├── enquiry.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+│
+└── images/
+    ├── Logo.png
+    ├── hero.jpeg
+    ├── hero-400.jpg
+    ├── hero-800.jpg
+    ├── IMG-20251118-WA0011-400.jpg
+    ├── IMG-20251118-WA0011-800.jpg
+    ├── IMG-20251118-WA0012-400.jpg
+    ├── IMG-20251118-WA0012-800.jpg
+    ├── IMG-20251118-WA0013-400.jpg
+    ├── IMG-20251118-WA0013-800.jpg
+    ├── IMG-20251118-WA0015-400.jpg
+    ├── IMG-20251118-WA0015-800.jpg
+    ├── IMG-20251118-WA0016-400.jpg
+    ├── IMG-20251118-WA0016-800.jpg
+    ├── IMG-20251118-WA0017-400.jpg
+    └── IMG-20251118-WA0017-800.jpg
